@@ -35,7 +35,10 @@ jobs:
 
       # run build script
       - name: Build VuePress site
-        run: pnpm build
+        run: |
+          pnpm clean
+          pnpm build
+          ls -la docs/.vuepress/dist
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
