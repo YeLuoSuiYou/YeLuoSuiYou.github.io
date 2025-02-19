@@ -5,9 +5,9 @@
   "author": "Fing <mtobeiyf@163.com>",
   "repository": "https://github.com/mtobeiyf/vuepress-homepage.git",
   "scripts": {
-    "clean": "rimraf dist/*",
+    "clean": "rimraf docs/.vuepress/dist",
     "dev": "vuepress dev docs",
-    "build": "pnpm run clean && vuepress build docs"
+    "build": "npm run clean && vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
