@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf docs/.vuepress/dist",
     "dev": "vuepress dev docs",
-    "build": "npm run clean && vuepress build docs"
+    "docs:build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
