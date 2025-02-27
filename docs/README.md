@@ -29,6 +29,7 @@ Computer Vision, Multimodal Learning, AIGC, Diffusion Model etc.
 
 ## News
 
+- [Feb. 2025] One paper accepted by CVPR 2025, see you Nashville!
 - [Nov. 2024] We submitted two works to CVPR 2025, focusing on diffusion model and MLLM.
 - [May 2024] OpenStory is selected as oral presentation by VDU@CVPR 2024.
 
@@ -53,7 +54,7 @@ Computer Vision, Multimodal Learning, AIGC, Diffusion Model etc.
 
   Diffusion and flow models have achieved remarkable successes in various applications such as text-to-image generation. However, these models typically rely on the same predetermined denoising schedules during inference for each prompt, which potentially limits the inference efficiency as well as the flexibility when handling different prompts. In this paper, we argue that the optimal noise schedule should adapt to each inference instance, and introduce the Time Prediction Diffusion Model (TPDM) to accomplish this. TPDM employs a plug-and-play Time Prediction Module (TPM) that predicts the next noise level based on current latent features at each denoising step. We train the TPM using reinforcement learning, aiming to maximize a reward that discounts the final image quality by the number of denoising steps. With such an adaptive scheduler, TPDM not only generates high-quality images that are aligned closely with human preferences but also adjusts the number of denoising steps and time on the fly, enhancing both performance and efficiency. We train TPDMs on multiple diffusion model benchmarks. With Stable Diffusion 3 Medium architecture, TPDM achieves an aesthetic score of 5.44 and a human preference score (HPS) of 29.59, while using around 50% fewer denoising steps to achieve better performance.
 
-  arxiv 2024
+  CVPR 2025
 
   [[PDF](https://arxiv.org/pdf/2412.01243)]
 
