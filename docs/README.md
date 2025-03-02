@@ -10,7 +10,7 @@ socials:
     icon: "/icons/github.svg"
     link: https://github.com/YeLuoSuiYou
 
-cv: /projects/resume.pdf
+cv: /projects/resume (en).pdf
 bio: Student majoring in Artificial Intelligence at South China University of Technology 
 email: zilyuye@foxmail.com
 ---
