@@ -1,17 +1,44 @@
 ---
 @string{aps = {American Physical Society,}}
-@string{CVPR = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}
+@string{CVPR = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition,}}
 
-@misc{ye2025scheduleflydiffusiontime,
+@inproceedings{ye2025scheduleflydiffusiontime,
   abbr={CVPR},
   bibtex_show={true},
   title={Schedule On the Fly: Diffusion Time Prediction for Faster and Better Image Generation}, 
   author={Zilyu Ye and Zhiyang Chen and Tiancheng Li and Zemin Huang and Weijian Luo and Guo-Jun Qi},
   abstract={Diffusion and flow matching models have achieved remarkable success in text-to-image generation. However, these models typically rely on the predetermined denoising schedules for all prompts. The multi-step reverse diffusion process can be regarded as a kind of chain-of-thought for generating high-quality images step by step. Therefore, diffusion models should reason for each instance to adaptively determine the optimal noise schedule, achieving high generation quality with sampling efficiency. In this paper, we introduce the Time Prediction Diffusion Model (TPDM) for this. TPDM employs a plug-and-play Time Prediction Module (TPM) that predicts the next noise level based on current latent features at each denoising step. We train the TPM using reinforcement learning to maximize a reward that encourages high final image quality while penalizing excessive denoising steps. With such an adaptive scheduler, TPDM not only generates high-quality images that are aligned closely with human preferences but also adjusts diffusion time and the number of denoising steps on the fly, enhancing both performance and efficiency. With Stable Diffusion 3 Medium architecture, TPDM achieves an aesthetic score of 5.44 and a human preference score (HPS) of 29.59, while using around 50% fewer denoising steps to achieve better performance.},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  month={June},
   year={2025},
   selected={true},
-  url={https://arxiv.org/abs/2412.01243}, 
+  pdf={https://arxiv.org/abs/2412.01243},
+  code={https://github.com/maple-research-lab/TPDM},
 }
 
+@inproceedings{ye2024openstorylargescaledatasetbenchmark,
+  abbr={arXiv},
+  bibtex_show={true},
+  title={Openstory++: A Large-scale Dataset and Benchmark for Instance-aware Open-domain Visual Storytelling}, 
+  author={Zilyu Ye and Jinxiu Liu and Ruotian Peng and Jinjin Cao and Zhiyang Chen and Yiyang Zhang and Ziwei Xuan and Mingyuan Zhou and Xiaoqian Shen and Mohamed Elhoseiny and Qi Liu and Guo-Jun Qi},
+  abstract={Recent image generation models excel at creating high-quality images from brief captions. However, they fail to maintain consistency of multiple instances across images when encountering lengthy contexts. This inconsistency is largely due to in existing training datasets the absence of granular instance feature labeling in existing training datasets. To tackle these issues, we introduce Openstory++, a large-scale dataset combining additional instance-level annotations with both images and text. Furthermore, we develop a training methodology that emphasizes entity-centric image-text generation, ensuring that the models learn to effectively interweave visual and textual information. Specifically, Openstory++ streamlines the process of keyframe extraction from open-domain videos, employing vision-language models to generate captions that are then polished by a large language model for narrative continuity. It surpasses previous datasets by offering a more expansive open-domain resource, which incorporates automated captioning, high-resolution imagery tailored for instance count, and extensive frame sequences for temporal consistency. Additionally, we present Cohere-Bench, a pioneering benchmark framework for evaluating the image generation tasks when long multimodal context is provided, including the ability to keep the background, style, instances in the given context coherent. Compared to existing benchmarks, our work fills critical gaps in multi-modal generation, propelling the development of models that can adeptly generate and interpret complex narratives in open-domain environments. Experiments conducted within Cohere-Bench confirm the superiority of Openstory++ in nurturing high-quality visual storytelling models, enhancing their ability to address open-domain generation tasks.},
+  year={2024},
+  eprint={2408.03695},
+  booktitle={arXiv preprint},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  selected={true},
+  pdf={https://arxiv.org/abs/2408.03695}, 
+  code={https://github.com/YeLuoSuiYou/openstorypp},
+}
+
+@inproceedings{ye2024openstory,
+  abbr={CVPRW},
+  bibtex_show={true},
+  title={OpenStory: A Large-Scale Open-Domain Dataset for Subject-Driven Visual Storytelling},
+  author={Ye, Zilyu and Liu, Jinxiu and Cao, JinJin and Chen, Zhiyang and Xuan, Ziwei and Zhou, Mingyuan and Liu, Qi and Qi, Guo-Jun},
+  abstract={Recently, the advancement and evolution of generative AI have been highly compelling. In this paper, we present OpenStory, a large-scale dataset tailored for training subject-focused story visualization models to generate coherent and contextually relevant visual narratives. Addressing the challenges of maintaining subject continuity across frames and capturing compelling narratives, We propose an innovative pipeline that automates the extraction of keyframes from open-domain videos. It ingeniously employs vision-language models to generate descriptive captions, which are then refined by a large language model to ensure narrative flow and coherence. Furthermore, advanced subject masking techniques are applied to isolate and segment the primary subjects. Derived from diverse video sources, including YouTube and existing datasets, OpenStory offers a comprehensive open-domain resource, surpassing prior datasets confined to specific scenarios. With automated captioning instead of manual annotation, high-resolution imagery optimized for subject count per frame, and extensive frame sequences ensuring consistent subjects for temporal modeling, OpenStory establishes itself as an invaluable benchmark. It facilitates advancements in subject-focused story visualization, enabling the training of models capable of comprehending and generating intricate multi-modal narratives from extensive visual and textual inputs.},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={7953--7962},
+  year={2024},
+  pdf={https://openaccess.thecvf.com/content/CVPR2024W/VDU/papers/Ye_OpenStory_A_Large-Scale_Open-Domain_Dataset_for_Subject-Driven_Visual_Storytelling_CVPRW_2024_paper.pdf},
+}
